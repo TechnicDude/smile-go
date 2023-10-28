@@ -1,0 +1,260 @@
+import 'package:flutter/material.dart';
+
+abstract class Languages {
+  static Languages? of(BuildContext context) {
+    return Localizations.of<Languages>(context, Languages);
+  }
+
+  String get appName;
+  String get labelWelcome;
+  String get labelInfo;
+  String get labelChangeLanguage;
+  String get labelSelectLanguage;
+  String get continues;
+
+  //onborard screen
+  String get onboardtitle;
+  String get onboardsubtitle;
+  String get onboardstarts;
+  String get welcomemessage;
+  String get welcomebtnname;
+  String get welcomemessagefirst;
+  String get welcomemessagese;
+  String get welcomemessagethree;
+
+  //dashboard part
+  String get home;
+  String get categories;
+  String get bidding;
+  String get profile;
+  String get categoriesonly;
+  String get category;
+  String get pleaseselcectcategory;
+  String get pleaseselcectsubcategory;
+  String get pleaseselcectbrand;
+  String get brand;
+  String get LanguageType;
+  String get subcategories;
+  String get viewallcategories;
+  String get currentruningbids;
+  String get myproductlist;
+
+// social login
+  String get letyou;
+  String get loginwithgoogle;
+  String get loginwithfb;
+  String get loginwithapple;
+  String get orloginwith;
+  String get orcontinuewith;
+  String get donthaveaccount;
+  String get remeberyourpassword;
+  String get otpnotrecive;
+  String get resend;
+  String get skip;
+  String get done;
+  String get alreadyregister;
+  String get iacceptthe;
+  String get termsandcondition;
+  String get firstname;
+  String get lastname;
+  String get next;
+  String get doctor;
+  String get patients;
+  String get role;
+  String get rolemessage;
+  String get alter;
+  String get pleaseaccettermesandcondtions;
+  String get confirmpasswordandpasswordnotmatch;
+  String get price;
+  String get bid;
+  String get selectoption;
+  String get soldBy;
+  String get unit;
+  String get mrp;
+  String get productdetails;
+  String get description;
+  String get buy;
+  String get productname;
+  String get address;
+  String get pincode;
+  String get orderagain;
+  String get bestsellingproducts;
+  String get quantity;
+  String get allreview;
+  String get relatedproducts;
+  String get sort;
+  String get filter;
+
+  //settings
+  String get contactus;
+  String get feedback;
+  String get privacypolicy;
+  String get cookiespolicy;
+  String get accountsettings;
+  String get helpnsupport;
+  String get about;
+  String get rateapp;
+  String get shareapp;
+  String get changelanguage;
+  String get shippingpolicy;
+  String get cancelationpolicy;
+  String get nointernetconnection;
+  String get update;
+  String get editprofile;
+  String get deleteaccount;
+  String get logoutmanaqamsg;
+  String get deleteaccountmsg;
+
+  // app translation
+  String get cart;
+  String get myorder;
+  String get wishlist;
+  String get settings;
+  String get nodatafound;
+  String get search;
+  String get biddingform;
+  String get searchyourorder;
+
+// bidding form
+  String get cancel;
+  String get startbidding;
+  String get enterdescription;
+  String get biddingprice;
+  String get productquantity;
+  String get productsname;
+  String get productsubcategory;
+  String get productcategory;
+  String get addtocart;
+  String get checkout;
+  String get notifications;
+
+  //others
+  String get remove;
+  String get productadd;
+  String get title;
+  String get report;
+
+// COACHBYAPP
+  // body parts
+  String get biceps;
+  String get bum;
+  String get waist;
+  String get leg;
+  // edit profile
+  String get weight;
+  String get height;
+  String get gender;
+  String get age;
+  String get selectdate;
+
+// authentication part
+  String get welcomelogintitlemsg;
+  String get welcomeloginsubtitlemsg;
+  String get name;
+  String get email;
+  String get password;
+  String get mobile;
+  String get pleaseenteremail;
+  String get pleaseentervalidemail;
+  String get pleaseenterpassword;
+  String get pleaseentervalidpassword;
+  String get login;
+  String get loginwithemail;
+  String get logout;
+  String get loginsussces;
+  String get createnewaccount;
+  String get logintoyouraccount;
+  String get signup;
+  String get forgotpassword;
+  String get forgotpasswordemailandmobile;
+
+  String get sendrequest;
+  String get passwordrequest;
+  String get passwordrequestmsg;
+  String get otpverify;
+  String get verify;
+  String get submit;
+  String get changenewpassword;
+  String get changepassword;
+  String get rememberyourpassword;
+  String get plzenterotpverify;
+  String get forgotpasswordmsg;
+  String get currentpassword;
+  String get confirmpassword;
+  String get confirmnewpassword;
+  String get newpassword;
+  String get forgotpasswords;
+  String get otpscreentitle;
+
+// drawer section
+  String get dashboard;
+  String get plans;
+  String get training;
+  String get myaccount;
+  String get myfavorites;
+  String get appsettings;
+  String get contactsupport;
+  String get exercise;
+  String get appointment;
+  String get chat;
+  String get articles;
+  String get topdoctors;
+  String get favoritedoctor;
+  String get seeall;
+  // fitness selection steps counter
+  String get nextsteps;
+  String get selectyourfavorite;
+  String get topdoctor;
+  String get upcoming;
+  String get completed;
+  String get cancelled;
+  String get myappointment;
+  String get leaveareview;
+  String get bookagain;
+  String get reschedule;
+  String get cancelaoppintment;
+  String get workingtime;
+  String get reviews;
+  String get bookappointment;
+  String get internetnotavailable;
+  String get ok;
+  String get alert;
+  String get no;
+  String get yes;
+  String get logoutmsg;
+  String get viewappointment;
+  String get areyoursurecancleapprointment;
+  String get yescancel;
+  String get back;
+  String get okay;
+  String get good;
+  String get treatment;
+  String get delete;
+  String get deletemsg;
+  String get wanttoexitapp;
+  String get aboutus;
+  String get scheduleappointment;
+  String get sendmessage;
+  String get patientinformation;
+  String get yourpackage;
+  String get faq;
+  String get doctorspeciality;
+  String get otpsendmsg;
+  String get otpsendsuccessfully;
+  String get confirmpasswordmustbematch;
+  String get sessionended;
+  String get writeareview;
+  String get reviewsuccessfull;
+  String get reviewsuccessfullmsg;
+  String get favoriteremovemsg;
+  String get slotNotavailavle;
+  String get selectReson;
+  String get appointmentdetails;
+  String get bookingDate;
+  String get bookingAmount;
+  String get bookingMethod;
+  String get bookingStatus;
+  String get cancelReason;
+  String get location;
+  String get selectlocation;
+}
